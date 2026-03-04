@@ -1,4 +1,4 @@
-# Discord Voice Utility Bot
+# Discord Voice Utility Bot Made by ChatGPT
 
 Simple Discord bot built with **Node.js** and **discord.js v14**. This
 bot can join voice channels by name, protect itself from mentions/DMs,
