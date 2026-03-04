@@ -16,9 +16,6 @@ and run 24/7 with an automatic status scheduler.
 -   🚫 **Mention & DM Protection**
     -   If someone mentions the bot → it replies:
 
-    ```{=html}
-    <!-- -->
-    ```
         Do not mention or DM, this is bot!
 -   ⚠ **Ignore @everyone / @here**
     -   Mass mentions are ignored
@@ -32,9 +29,6 @@ and run 24/7 with an automatic status scheduler.
 
 -   🎭 **Custom Status**
 
-```{=html}
-<!-- -->
-```
     bot voice selalu always
 
 ------------------------------------------------------------------------
@@ -48,33 +42,62 @@ and run 24/7 with an automatic status scheduler.
 
 ------------------------------------------------------------------------
 
-# Installation
+## Install & Setup Project (Zero → Running)
 
-## 1. Clone Repository
+> Example VPS path: `~/projek/bot`
 
-    git clone https://github.com/jytmX/Discord-bot
-    cd discord-voice-bot
+### A. Create project folder
+```bash
+mkdir -p ~/projek/bot
+cd ~/projek/bot
+````
 
-## 2. Install Dependencies
+### B. Make sure Node.js 18+ is installed
 
-    npm install
+If your Node version is below 18, upgrade it (example for Ubuntu):
 
-Dependencies used: - discord.js - @discordjs/voice - dotenv
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+node -v
+```
 
-------------------------------------------------------------------------
+### C. Initialize the project (create `package.json`)
 
-## 3. Create Environment File
+```bash
+npm init -y
+```
 
-Create `.env` file:
+### D. Install dependencies
 
-    nano .env
+```bash
+npm install discord.js @discordjs/voice dotenv
+```
 
-Add your bot token:
+After installing, the following files/folders will appear:
 
-    DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
+* `node_modules/`
+* `package-lock.json`
 
-------------------------------------------------------------------------
+---
 
+## 4) Create Token File `.env`
+
+Create a `.env` file in the root project folder (same level as `index.js`):
+
+```bash
+nano .env
+```
+
+Add your Discord bot token:
+
+```env
+DISCORD_TOKEN=YOUR_DISCORD_BOT_TOKEN
+```
+
+> Do not use quotes and do not add extra spaces.
+
+---
 # Creating the Discord Bot
 
 1.  Go to **Discord Developer Portal**
@@ -84,9 +107,7 @@ Add your bot token:
 5.  Copy the **Bot Token**
 6.  Enable:
 
-```{=html}
-<!-- -->
-```
+
     MESSAGE CONTENT INTENT
 
 Save changes.
