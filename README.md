@@ -52,7 +52,7 @@ and run 24/7 with an automatic status scheduler.
 
 ## 1. Clone Repository
 
-    git clone https://github.com/yourusername/discord-voice-bot.git
+    git clone https://github.com/jytmX/Discord-bot
     cd discord-voice-bot
 
 ## 2. Install Dependencies
